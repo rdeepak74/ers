@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RAHULKUMARNATHU/employee-review-system.git"
+    "url": "git+https://github.com/rdeepak74/ers.gitt"
   },
   "author": "Deepak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RAHULKUMARNATHU/employee-review-system/issues"
+    "url": "https://github.com/rdeepak74/ers/issues"
   },
-  "homepage": "https://github.com/RAHULKUMARNATHU/employee-review-system#readme",
+  "homepage": "https://github.com/rdeepak74/ers#readme",
   "dependencies": {
     "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.1",
