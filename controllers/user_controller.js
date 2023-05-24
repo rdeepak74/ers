@@ -40,7 +40,14 @@ module.exports.createSession = function (req, res) {
 
 // destroying session
 module.exports.destroySession = function (req, res) {
-  req.logout();
+  req.logout(function(err){
+        
+    if(err){
+
+        return  res.redirect('/');
+    }
+    
+});
   console.log("Logeed Out");
   return res.redirect("/users/login");
 };
@@ -48,7 +55,9 @@ module.exports.destroySession = function (req, res) {
 // go to login page
 module.exports.login = function (req, res) {
   // if user is authenticated then not able to open login panel
+  // console.log("qqqqqqqqqqqqqqqqq"+req.isAuthenticated())
   if (req.isAuthenticated()) {
+    // console.log("sadfhsdfsdfsddfdsdddddddddd");
     return res.render("home", {
       title: "ERS | Home",
     });
@@ -105,7 +114,7 @@ module.exports.home = async function (req, res) {
       let x = await User.findById(review[i].from);
 
       let curr_review = {
-        name: review[i].name,
+        name: x.name,
         review: review[i].review,
         updated: review[i].updatedAt,
       };
