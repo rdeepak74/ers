@@ -105,7 +105,7 @@ module.exports.home = async function (req, res) {
       let x = await User.findById(review[i].from);
 
       let curr_review = {
-        name: x.name,
+        name: review[i].name,
         review: review[i].review,
         updated: review[i].updatedAt,
       };
@@ -119,7 +119,7 @@ module.exports.home = async function (req, res) {
       user: user,
     });
   } catch (error) {
-    console.log(error);
+    console.log("testesteteststest"+error);
     return;
   }
 };

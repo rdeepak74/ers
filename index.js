@@ -55,7 +55,7 @@ app.use(
     },
     store: MongoStore.create(
       {
-        mongoUrl: "mongodb://localhost:27017/habit",
+        mongoUrl: "mongodb+srv://deepakmegtech:deepak2611@cluster0.4vpatrr.mongodb.net/Employee-Review-System?retryWrites=true&w=majority",
         autoRemove: "disabled",
       },
       function (err) {

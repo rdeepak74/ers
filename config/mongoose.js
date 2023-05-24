@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // connect from mongodb
-mongoose.connect('mongodb://localhost/Employee-Review-System');
+mongoose.connect('mongodb+srv://deepakmegtech:deepak2611@cluster0.4vpatrr.mongodb.net/Employee-Review-System?retryWrites=true&w=majority');
 // mongoose.connect('tabase?retryWrites=true&w=majority');
 
 // aquire connection if it is succesful
